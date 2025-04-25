@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Casita Sedona - Javelina Room</title>
+<meta charset="utf-8">
+<link href="../styles/styles.css" rel="stylesheet">
+</head>
+<body>
+<div id="wrapper">
+  <header>
+      <style>
+          a {
+              text-decoration: none;
+          }
+      </style>
+      <h1><a href="../index.html">Casita Sedona</a></h1>
+  </header>
+  <nav>
+    <ul> 
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="canyon.html">Canyon Room</a></li>
+      <li><a href="javelina.html">Javelina Room</a></li>
+      <li><a href="../events/weekend.html">Weekend Events</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+  <img src="../images/javelina.png" alt="Javelina Rooms" height="200" width="400"> 
+
+  <h3>Rooms near Javelina</h3>
+  <p>Casita Sedona also offers rooms in the beautiful Javelina downtown area. If you like the big city lifestyle, click the white "CONTACT US" button to apply for a room today!</p>
+
+  <!-- display pricing dynamically using the Room object -->
+  <p>Price per day: $<span id="roomPrice"></span></p>
+
+  <a href="../contact.html">
+  <img src="../images/contact_us2.png" alt="Contact Us" height="200" width="250"> 
+  </a>
+  </main>
+  <footer>
+  Copyright &copy; 2024 Levi Boardman
+  </footer>
+</div>
+
+<script>
+// assign room price dynamically using the Room object
+document.getElementById("roomPrice").textContent = javelinaRoom.pricePerDay;
+</script>
+<script src="../script.js" defer></script>
+</body>
+</html>

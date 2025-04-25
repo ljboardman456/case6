@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Browser Security</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script> <!-- added defer to ensure js loads after html -->
+</head>
+<body>
+  <h1>Browser Security</h1>
+
+  <!-- added map container -->
+  <div id="map"></div> <!-- div to hold the google map -->
+
+  <!-- added location display section -->
+  <div id="location-info">
+    <p>Latitude: <span id="latitude">Loading...</span></p> <!-- shows latitude -->
+    <p>Longitude: <span id="longitude">Loading...</span></p> <!-- shows longitude -->
+    <p>Altitude: <span id="altitude">Loading...</span></p> <!-- shows altitude -->
+  </div>
+
+  <!-- added google maps api script tag -->
+  <script async
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"> <!-- replace your_api_key with a real key -->
+  </script>
+</body>
+</html>

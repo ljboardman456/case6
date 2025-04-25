@@ -1,0 +1,162 @@
+nav, main, footer { display: block; 
+}
+header {
+	display: block;
+	text-decoration: none;
+}
+
+html,body { height: 100%;
+	   margin: 0;
+	   padding: 0;
+	   background-image: url(../images/bgland.jpg);
+	   background-size: cover;
+	   background-color: #330000;
+       font-family: Verdana, Arial, sans-serif, Cursive;
+}
+#wrapper { height: 100%;
+		   background-color: #F4E8BC;
+		   color: #330000;
+		   box-shadow: 5px 5px 5px #000000;
+}
+/* added styles for the map */
+#map {
+	width: 100%; /* sets the width of the map */
+	height: 400px; /* sets the height of the map */
+	margin-bottom: 20px; /* adds spacing below the map */
+  }
+  
+  /* added styles for location info */
+  #location-info {
+	font-family: Arial, sans-serif; /* sets font for location info */
+	font-size: 1rem; /* sets base font size */
+  }
+  
+h1 { background-repeat: no-repeat;
+     background-color: #F4E8BC;
+	 height: 110px;
+	 font-family: 'Schoolbell', arial, serif;
+	 font-size: 4.0em;
+	 padding-top: 20px;
+	 text-shadow: 3px 3px 3px #90745D;
+	 margin-bottom: 0;
+	 text-decoration: none;
+}
+nav { padding-top: 0px;
+      width: 600px; 
+}
+nav ul { display: flex;
+		list-style-type: none; 
+	 }
+nav li { padding-bottom: 5px;
+       display: inline-block;
+	   font-weight: bold;
+}
+nav a { text-decoration: none; }
+nav a:link { color: #330000; }
+nav a:visited{ color: #90745D; }
+nav a:hover { color: #3F4632; }
+
+
+main { background-color: #FFFFCC;
+          margin-left: 0px;
+          padding: 1px 20px 20px 20px;   
+		  min-height: 300px;
+}
+main img { float: right;
+              padding: 20px;
+}
+
+footer { background-color: #FFFFCC;
+       margin-left: 0px;
+       padding: 20px;
+       text-align: center;
+	   font-size: small;
+	   font-style: italic;
+}
+@media (min-width: 600px) {
+	#wrapper {
+		height: 100%;
+	}
+	header {
+		padding-left: 0;
+		text-align: center;
+		background-image: url(../images/kdlfaj);
+	}
+	html, body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		background-image: url(../images/bgland.jpg);
+	}
+	h1 {
+		padding-left: 0px;
+		font-size: 4.5em;
+	}
+	nav ul {
+		flex-flow: row nowrap;
+		justify-content: space-around;
+	}
+	nav li {
+		border-bottom: none;
+	}
+	#flow {
+		display: flex;
+		flex-direction: row;
+	}
+	#mobile {
+		display: none;
+	}
+	#desktop {
+		display: inline;
+	}
+	.details {
+		display: flex;
+		flex-direction: row;
+	}
+	h4 {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+}
+@media (min-width: 1024px) {
+	@supports (display: grid) {
+		header {
+			grid-area: header;
+		}
+		h1 {
+			height: 100%;
+			background-image: url(../images/logo.gif);
+		}
+		html,body {
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			background-image: url(../images/bgland.jpg);
+		}
+		nav {
+			grid-area: nav;
+			text-align: left;
+			height: 100%
+		}
+		main {
+			grid-area: main;
+		}
+		footer { grid-area: footer;
+		}
+		#wrapper {
+			display: grid;
+			grid-template:
+				"header header"
+				"nav	main"
+				"nav footer"
+				/200px
+		}
+		nav ul {
+			flex-direction: column;
+		}
+		header {
+			background-image: url(../images/bgland.jpg);
+		}
+	}
+}
+	  

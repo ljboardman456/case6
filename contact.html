@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Casita Sedona - Contact</title>
+    <meta charset="utf-8">
+    <link href="styles/styles.css" rel="stylesheet">
+    <script src="script.js" defer></script> <!-- link to external JavaScript file -->
+</head>
+
+<body>
+<div id="wrapper">
+    <header>
+        <style>
+            a {
+                text-decoration: none;
+            }
+        </style>
+        <h1><a href="index.html">Casita Sedona</a></h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rooms/canyon.html">Canyon Room</a></li>
+            <li><a href="rooms/javelina.html">Javelina Room</a></li>
+            <li><a href="events/weekend.html">Weekend Events</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Contact Us</h2>
+        <p>Apply for a room here!!:</p>
+        <form id="contactForm" method="post" action="https://webdevbasics.net/scripts/demo.php">
+            <label for="myName">Name: </label>
+            <input type="text" id="myName" name="myName" required><br>
+            <label for="myEmail">E-mail: </label>
+            <input type="email" id="myEmail" name="myEmail" required><br>
+            <label for="myDate">Date: </label>
+            <input type="date" id="myDate" name="myDate" required><br>
+            <label for="myType">Room Type: </label><br>
+            <input type="checkbox" name="Canyon"> Canyon Room<br>
+            <input type="checkbox" name="Javelina"> Javelina Room<br>
+            <input type="submit" value="Apply Now">
+        </form>
+        <div id="errorMessages" style="color: red;"></div> <!-- error message area -->
+    </main>
+    <footer>
+        Copyright &copy; 2024 Levi Boardman
+    </footer>
+</div>
+</body>
+</html>

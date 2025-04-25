@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Casita Sedona - Canyon Room</title>
+<meta charset="utf-8">
+<link href="../styles/styles.css" rel="stylesheet">
+</head>
+<body>
+<div id="wrapper">
+  <header>
+      <style>
+          a {
+              text-decoration: none;
+          }
+      </style>
+      <h1><a href="../index.html">Casita Sedona</a></h1>
+  </header>
+  <nav>
+   <ul> 
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="canyon.html">Canyon Room</a></li>
+    <li><a href="javelina.html">Javelina Room</a></li>
+    <li><a href="../events/weekend.html">Weekend Events</a></li>
+    <li><a href="../contact.html">Contact</a></li>
+  </ul>
+  </nav>
+  <main>
+  <img src="../images/canyon.png" alt="Canyon Rooms" width="450" height="200">
+  
+  <h3>Rooms Inside the Canyon</h3>
+  <p>We at Casita Sedona offer beautiful rooms either inside the canyon or outside with gorgeous views of the canyon. Click the white "CONTACT US" button to apply to get a room today!</p>
+
+  <!-- display pricing using the Room object -->
+  <p>Price per day: $<span id="roomPrice"></span></p>
+
+  <a href="../contact.html">
+  <img src="../images/contact_us2.png" alt="contact us" width="200" height="150"> 
+  </a>
+  </main>
+  <footer>
+  Copyright &copy; 2024 Levi Boardman
+  </footer>
+</div>
+
+<script>
+// assign room price dynamically using the Room object
+document.getElementById("roomPrice").textContent = canyonRoom.pricePerDay;
+</script>
+<script src="../script.js" defer></script>
+</body>
+</html>
